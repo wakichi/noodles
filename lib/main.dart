@@ -4,6 +4,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:platform_design/welcome_screen.dart';
 
 import 'news_tab.dart';
 import 'profile_tab.dart';
@@ -65,10 +66,7 @@ class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
   // 4つの可能なタブすべて。この引き出しは、曲タブに挿入されます。
   //実際に引き出しの周りに足場を構築します。
   Widget _buildAndroidHomePage(BuildContext context) {
-    return SongTab(
-      key: universityTabKey,
-      androidDrawer: _AndroidDrawer(),
-    );
+    return WelcomeScreen();
   }
 
  // iOSでは、アプリは下部タブパラダイムを使用します。ここでは、各タブビューが内部にあります
