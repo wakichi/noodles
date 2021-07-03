@@ -139,6 +139,7 @@ class HeroAnimatingSongCard extends StatelessWidget {
     required this.song,
     required this.color,
     required this.heroAnimation,
+    //required this.univ_image,
     this.onPressed,
   });
 
@@ -193,6 +194,9 @@ class HeroAnimatingSongCard extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 45) *
                       (1 - heroAnimation.value),
                   child: Container(
+                    /*child: Image(
+                      image: AssetImage('images/graph.png'),
+                    ),*/
                     height: playButtonSize,
                     width: playButtonSize,
                     decoration: const BoxDecoration(
@@ -226,9 +230,13 @@ class SongPlaceholderTile extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
         child: Row(
           children: [
-            Container(
-              color: Theme.of(context).textTheme.bodyText2!.color,
-              width: 130,
+//            Container(
+//              color: Theme.of(context).textTheme.bodyText2!.color,
+//              width: 100,
+//            ),
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/muto.jpg'),
             ),
             const Padding(
               padding: EdgeInsets.only(left: 12),
@@ -237,29 +245,50 @@ class SongPlaceholderTile extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
+                  /*Container(
                     height: 9,
                     margin: const EdgeInsets.only(right: 60),
                     color: Theme.of(context).textTheme.bodyText2!.color,
-                  ),
-                  Container(
+                  ),*/
+                  /*Container(
                     height: 9,
-                    margin: const EdgeInsets.only(right: 20, top: 8),
+                    margin: const EdgeInsets.only(right: 60, top: 8),
                     color: Theme.of(context).textTheme.bodyText2!.color,
+                  ),*/
+                  Text(
+                    'ニックネーム：　東大絶対合格マン',
+                    style: TextStyle(
+                      fontSize: 15,
+                      decoration: TextDecoration.none,
+                    ),
                   ),
-                  Container(
+                  Text(
+                    '合計勉強時間：　○○時間！',
+                    style: TextStyle(
+                      fontSize: 15,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                  Text(
+                    '使用中の教材：　青チャート',
+                    style: TextStyle(
+                      fontSize: 15,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                  /*Container(
                     height: 9,
-                    margin: const EdgeInsets.only(right: 40, top: 8),
+                    margin: const EdgeInsets.only(right: 60, top: 8),
                     color: Theme.of(context).textTheme.bodyText2!.color,
-                  ),
-                  Container(
+                  ),*/
+                  /*Container(
                     height: 9,
-                    margin: const EdgeInsets.only(right: 80, top: 8),
+                    margin: const EdgeInsets.only(right: 60, top: 8),
                     color: Theme.of(context).textTheme.bodyText2!.color,
-                  ),
+                  ),*/
                   Container(
-                    height: 9,
-                    margin: const EdgeInsets.only(right: 50, top: 8),
+                    height: 5,
+                    margin: const EdgeInsets.only(right: 60, top: 8),
                     color: Theme.of(context).textTheme.bodyText2!.color,
                   ),
                 ],

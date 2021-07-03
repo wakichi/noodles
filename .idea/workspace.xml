@@ -3,9 +3,46 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3e0b48f1-2c69-4e5c-97f5-6ec89f44aca9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/kuzuoka.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/maruyama.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/miyamori.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/muto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/wakida.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/zoom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/profile_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/profile_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/song_detail_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/song_detail_tab.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/songs_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/songs_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +60,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testing_app_a" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\KanameMuto\StudioProjects\noodles\images" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
@@ -44,22 +87,49 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1706" height="239" key="GridCell.Tab.0.bottom" timestamp="1625303749049">
-      <screen x="0" y="25" width="2560" height="1326" />
+    <state x="743" y="-2058" width="1269" height="840" key="AVDManager" timestamp="1625332044820">
+      <screen x="636" y="-2160" width="1920" height="1040" />
     </state>
+    <state x="743" y="-2058" width="1269" height="840" key="AVDManager/0.0.1280.680/636.-2160.1920.1040@636.-2160.1920.1040" timestamp="1625332044820" />
+    <state x="1159" y="-1882" key="FileChooserDialogImpl" timestamp="1625338692288">
+      <screen x="636" y="-2160" width="1920" height="1040" />
+    </state>
+    <state x="1159" y="-1882" key="FileChooserDialogImpl/0.0.1280.680/636.-2160.1920.1040@636.-2160.1920.1040" timestamp="1625338692288" />
+    <state width="1413" height="280" key="GridCell.Tab.0.bottom" timestamp="1625336023264">
+      <screen x="636" y="-2160" width="1920" height="1040" />
+    </state>
+    <state width="1413" height="280" key="GridCell.Tab.0.bottom/0.0.1280.680/636.-2160.1920.1040@636.-2160.1920.1040" timestamp="1625336023264" />
     <state width="1706" height="239" key="GridCell.Tab.0.bottom/0.25.2560.1326@0.25.2560.1326" timestamp="1625303749049" />
-    <state width="1706" height="239" key="GridCell.Tab.0.center" timestamp="1625303749049">
-      <screen x="0" y="25" width="2560" height="1326" />
+    <state width="1413" height="280" key="GridCell.Tab.0.center" timestamp="1625336023263">
+      <screen x="636" y="-2160" width="1920" height="1040" />
     </state>
+    <state width="1413" height="280" key="GridCell.Tab.0.center/0.0.1280.680/636.-2160.1920.1040@636.-2160.1920.1040" timestamp="1625336023263" />
     <state width="1706" height="239" key="GridCell.Tab.0.center/0.25.2560.1326@0.25.2560.1326" timestamp="1625303749049" />
-    <state width="1706" height="239" key="GridCell.Tab.0.left" timestamp="1625303749047">
-      <screen x="0" y="25" width="2560" height="1326" />
+    <state width="1413" height="280" key="GridCell.Tab.0.left" timestamp="1625336023263">
+      <screen x="636" y="-2160" width="1920" height="1040" />
     </state>
+    <state width="1413" height="280" key="GridCell.Tab.0.left/0.0.1280.680/636.-2160.1920.1040@636.-2160.1920.1040" timestamp="1625336023263" />
     <state width="1706" height="239" key="GridCell.Tab.0.left/0.25.2560.1326@0.25.2560.1326" timestamp="1625303749047" />
-    <state width="1706" height="239" key="GridCell.Tab.0.right" timestamp="1625303749049">
-      <screen x="0" y="25" width="2560" height="1326" />
+    <state width="1413" height="280" key="GridCell.Tab.0.right" timestamp="1625336023263">
+      <screen x="636" y="-2160" width="1920" height="1040" />
     </state>
+    <state width="1413" height="280" key="GridCell.Tab.0.right/0.0.1280.680/636.-2160.1920.1040@636.-2160.1920.1040" timestamp="1625336023263" />
     <state width="1706" height="239" key="GridCell.Tab.0.right/0.25.2560.1326@0.25.2560.1326" timestamp="1625303749049" />
+    <state x="880" y="-1992" key="SettingsEditor" timestamp="1625332037301">
+      <screen x="636" y="-2160" width="1920" height="1040" />
+    </state>
+    <state x="880" y="-1992" key="SettingsEditor/0.0.1280.680/636.-2160.1920.1040@636.-2160.1920.1040" timestamp="1625332037301" />
   </component>
 </project>
