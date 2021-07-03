@@ -23,7 +23,7 @@ class ProfileTab extends StatelessWidget {
               padding: EdgeInsets.all(8),
               child: Center(
                 child: Text(
-                  '😼',
+                  'Kaname Muto',
                   style: TextStyle(
                     fontSize: 80,
                     decoration: TextDecoration.none,
@@ -32,8 +32,8 @@ class ProfileTab extends StatelessWidget {
               ),
             ),
             const PreferenceCard(
-              header: 'MY INTENSITY PREFERENCE',
-              content: '🔥',
+              header: '志望校',
+              content: '北海道大学',
               preferenceChoices: [
                 'Super heavy',
                 'Dial it to 11',
@@ -43,7 +43,7 @@ class ProfileTab extends StatelessWidget {
               ],
             ),
             const PreferenceCard(
-              header: 'CURRENT MOOD',
+              header: '勉強時間のグラフをここに表示？',
               content: '🤘🏾🚀',
               preferenceChoices: [
                 'Over the moon',

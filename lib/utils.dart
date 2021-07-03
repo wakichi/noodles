@@ -35,25 +35,26 @@ String generateRandomHeadline() {
 
   switch (_random.nextInt(10)) {
     case 0:
-      return '$artist says ${nouns[_random.nextInt(nouns.length)]}';
+      //return '$artist says ${nouns[_random.nextInt(nouns.length)]}';
+      return 'Kaname Muto';
     case 1:
-      return '$artist arrested due to ${wordPairIterator.first.join(' ')}';
+      return 'Wakida';
     case 2:
-      return '$artist releases ${capitalizePair(wordPairIterator.first)}';
+      return 'Miyamori';
     case 3:
-      return '$artist talks about his ${nouns[_random.nextInt(nouns.length)]}';
+      return '葛岡';
     case 4:
-      return '$artist talks about her ${nouns[_random.nextInt(nouns.length)]}';
+      return '丸山';
     case 5:
-      return '$artist talks about their ${nouns[_random.nextInt(nouns.length)]}';
+      return 'アンジェラ';
     case 6:
-      return '$artist says their music is inspired by ${wordPairIterator.first.join(' ')}';
+      return 'アンジェラ２';
     case 7:
-      return '$artist says the world needs more ${nouns[_random.nextInt(nouns.length)]}';
+      return 'アンジェラ３';
     case 8:
-      return '$artist calls their band ${adjectives[_random.nextInt(adjectives.length)]}';
+      return 'アンジェラ４';
     case 9:
-      return '$artist finally ready to talk about ${nouns[_random.nextInt(nouns.length)]}';
+      return 'アンジェラ';
   }
 
   assert(false, 'Failed to generate news headline');
