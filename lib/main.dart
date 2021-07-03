@@ -19,17 +19,17 @@ class MyAdaptingApp extends StatelessWidget {
     // Either Material or Cupertino widgets work in either Material or Cupertino
     // Apps.
     return MaterialApp(
-      title: 'Adaptive Music App',
+      title: 'オンラインもくもく会',
       theme: ThemeData(
         // Use the green theme for Material widgets.
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blue,
       ),
       darkTheme: ThemeData.dark(),
       builder: (context, child) {
         return CupertinoTheme(
-          // Instead of letting Cupertino widgets auto-adapt to the Material
-          // theme (which is green), this app will use a different theme
-          // for Cupertino (which is blue by default).
+          //クパチーノウィジェットをマテリアルに自動適応させる代わりに
+          //テーマ（緑色）、このアプリは別のテーマを使用します
+          //クパチーノの場合（デフォルトでは青色）。
           data: const CupertinoThemeData(),
           child: Material(child: child),
         );
@@ -39,13 +39,13 @@ class MyAdaptingApp extends StatelessWidget {
   }
 }
 
-// Shows a different type of scaffold depending on the platform.
+//プラットフォームに応じて異なるタイプのスキャフォールドを表示します。
 //
-// This file has the most amount of non-sharable code since it behaves the most
-// differently between the platforms.
+//このファイルは、最も動作するため、共有不可能なコードが最も多く含まれています
+//プラットフォーム間で異なります。
 //
-// These differences are also subjective and have more than one 'right' answer
-// depending on the app and content.
+//これらの違いも主観的であり、複数の「正しい」答えがあります
+//アプリとコンテンツによって異なります。
 class PlatformAdaptingHomePage extends StatefulWidget {
   @override
   _PlatformAdaptingHomePageState createState() =>
@@ -53,39 +53,39 @@ class PlatformAdaptingHomePage extends StatefulWidget {
 }
 
 class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
-  // This app keeps a global key for the songs tab because it owns a bunch of
-  // data. Since changing platform re-parents those tabs into different
-  // scaffolds, keeping a global key to it lets this app keep that tab's data as
-  // the platform toggles.
+  //このアプリは、多数の曲を所有しているため、[曲]タブのグローバルキーを保持します
+  //データ。プラットフォームを変更すると、それらのタブが別のタブに再ペアレント化されるため
+  //スキャフォールド、グローバルキーを保持すると、このアプリはそのタブのデータを次のように保持できます
+  //プラットフォームが切り替わります。
   //
-  // This isn't needed for apps that doesn't toggle platforms while running.
-  final songsTabKey = GlobalKey();
+  //これは、実行中にプラットフォームを切り替えないアプリには必要ありません。
+  final universityTabKey = GlobalKey();
 
-  // In Material, this app uses the hamburger menu paradigm and flatly lists
-  // all 4 possible tabs. This drawer is injected into the songs tab which is
-  // actually building the scaffold around the drawer.
+  // Materialでは、このアプリはハンバーガーメニューパラダイムとフラットリストを使用します
+  // 4つの可能なタブすべて。この引き出しは、曲タブに挿入されます。
+  //実際に引き出しの周りに足場を構築します。
   Widget _buildAndroidHomePage(BuildContext context) {
-    return SongsTab(
-      key: songsTabKey,
+    return SongTab(
+      key: universityTabKey,
       androidDrawer: _AndroidDrawer(),
     );
   }
 
-  // On iOS, the app uses a bottom tab paradigm. Here, each tab view sits inside
-  // a tab in the tab scaffold. The tab scaffold also positions the tab bar
-  // in a row at the bottom.
+ // iOSでは、アプリは下部タブパラダイムを使用します。ここでは、各タブビューが内部にあります
+  //タブスキャフォールド内のタブ。タブスキャフォールドはタブバーも配置します
+  //一番下の行に。
   //
-  // An important thing to note is that while a Material Drawer can display a
-  // large number of items, a tab bar cannot. To illustrate one way of adjusting
-  // for this, the app folds its fourth tab (the settings page) into the
-  // third tab. This is a common pattern on iOS.
+  //注意すべき重要なことは、マテリアルドロワーは
+  //多数のアイテム、タブバーはできません。調整の1つの方法を説明するため
+  //このために、アプリは4番目のタブ（設定ページ）を
+  // 3番目のタブ。これはiOSで一般的なパターンです。
   Widget _buildIosHomePage(BuildContext context) {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
         items: const [
           BottomNavigationBarItem(
-            label: SongsTab.title,
-            icon: SongsTab.iosIcon,
+            label: SongTab.title,
+            icon: SongTab.iosIcon,
           ),
           BottomNavigationBarItem(
             label: NewsTab.title,
@@ -101,8 +101,8 @@ class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
         switch (index) {
           case 0:
             return CupertinoTabView(
-              defaultTitle: SongsTab.title,
-              builder: (context) => SongsTab(key: songsTabKey),
+              defaultTitle: SongTab.title,
+              builder: (context) => SongTab(key: universityTabKey),
             );
           case 1:
             return CupertinoTabView(
@@ -139,19 +139,19 @@ class _AndroidDrawer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           DrawerHeader(
-            decoration: const BoxDecoration(color: Colors.green),
+            decoration: const BoxDecoration(color: Colors.blueAccent),
             child: Padding(
               padding: const EdgeInsets.only(bottom: 20),
               child: Icon(
                 Icons.account_circle,
-                color: Colors.green.shade800,
+                color: Colors.blue.shade800,
                 size: 96,
               ),
             ),
           ),
           ListTile(
-            leading: SongsTab.androidIcon,
-            title: const Text(SongsTab.title),
+            leading: SongTab.androidIcon,
+            title: const Text(SongTab.title),
             onTap: () {
               Navigator.pop(context);
             },

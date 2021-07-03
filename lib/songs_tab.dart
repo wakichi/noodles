@@ -10,21 +10,21 @@ import 'song_detail_tab.dart';
 import 'utils.dart';
 import 'widgets.dart';
 
-class SongsTab extends StatefulWidget {
-  static const title = 'Songs';
-  static const androidIcon = Icon(Icons.music_note);
+class SongTab extends StatefulWidget {
+  static const title = 'もくもく会';
+  static const androidIcon = Icon(Icons.cast_for_education);
   static const iosIcon = Icon(CupertinoIcons.music_note);
 
-  const SongsTab({Key? key, this.androidDrawer}) : super(key: key);
+  const SongTab({Key? key, this.androidDrawer}) : super(key: key);
 
   final Widget? androidDrawer;
 
   @override
-  _SongsTabState createState() => _SongsTabState();
+  _SongTabState createState() => _SongTabState();
 }
 
-class _SongsTabState extends State<SongsTab> {
-  static const _itemsLength = 50;
+class _SongTabState extends State<SongTab> {
+  static const _itemsLength = 10;
 
   final _androidRefreshKey = GlobalKey<RefreshIndicatorState>();
 
@@ -38,8 +38,8 @@ class _SongsTabState extends State<SongsTab> {
   }
 
   void _setData() {
-    colors = getRandomColors(_itemsLength);
-    songNames = getRandomNames(_itemsLength);
+    colors = getRandomColors(4);
+    songNames = ['北海道大学','中央大学','東京工業大学','一橋大学'];
   }
 
   Future<void> _refreshData() {
@@ -113,7 +113,7 @@ class _SongsTabState extends State<SongsTab> {
   Widget _buildAndroid(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(SongsTab.title),
+        title: const Text(SongTab.title),
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh),
