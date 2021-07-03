@@ -25,7 +25,7 @@ class ProfileTab extends StatelessWidget {
                 child: Text(
                   'Kaname Muto',
                   style: TextStyle(
-                    fontSize: 80,
+                    fontSize: 40,
                     decoration: TextDecoration.none,
                   ),
                 ),
@@ -35,23 +35,32 @@ class ProfileTab extends StatelessWidget {
               header: '志望校',
               content: '北海道大学',
               preferenceChoices: [
-                'Super heavy',
-                'Dial it to 11',
-                "Head bangin'",
-                '1000W',
-                'My neighbor hates me',
+                '工学部',
+                '理学部',
+                "文学部",
+                '法学部',
               ],
             ),
-            const PreferenceCard(
-              header: '勉強時間のグラフをここに表示？',
-              content: '🤘🏾🚀',
-              preferenceChoices: [
-                'Over the moon',
-                'Basking in sunlight',
-                'Hello fellow Martians',
-                'Into the darkness',
-              ],
+            Text(
+              '合計勉強時間 777時間!',
+              style: TextStyle(
+                fontSize: 20,
+                decoration: TextDecoration.none,
+              ),
             ),
+            Image(
+              image: AssetImage('images/graph.png'),
+            ),
+//            const PreferenceCard(
+//              header: '勉強時間のグラフをここに表示？',
+//              content: '🤘🏾🚀',
+//              preferenceChoices: [
+//                'Over the moon',
+//                'Basking in sunlight',
+//                'Hello fellow Martians',
+//                'Into the darkness',
+//             ],
+//            ),
             Expanded(
               child: Container(),
             ),

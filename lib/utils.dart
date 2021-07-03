@@ -36,25 +36,25 @@ String generateRandomHeadline() {
   switch (_random.nextInt(10)) {
     case 0:
       //return '$artist says ${nouns[_random.nextInt(nouns.length)]}';
-      return 'Kaname Muto';
+      return '武藤要　A大学チューター';
     case 1:
-      return 'Wakida';
+      return '脇田康平　B大学チューター';
     case 2:
-      return 'Miyamori';
+      return '宮森浩輔　C大学チューター';
     case 3:
-      return '葛岡';
+      return '葛岡拓真　D大学チューター';
     case 4:
-      return '丸山';
+      return '丸山拓哉　E大学チューター';
     case 5:
-      return 'アンジェラ';
+      return 'アンジェラ１　F大学チューター';
     case 6:
-      return 'アンジェラ２';
+      return 'アンジェラ２　G大学チューター';
     case 7:
-      return 'アンジェラ３';
+      return 'アンジェラ３　H大学チューター';
     case 8:
-      return 'アンジェラ４';
+      return 'アンジェラ４　I大学チューター';
     case 9:
-      return 'アンジェラ';
+      return 'アンジェラ５　K大学チューター';
   }
 
   assert(false, 'Failed to generate news headline');
