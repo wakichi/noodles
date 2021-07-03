@@ -38,8 +38,8 @@ class _SongTabState extends State<SongTab> {
   }
 
   void _setData() {
-    colors = getRandomColors(4);
-    songNames = ['北海道大学','中央大学','東京工業大学','一橋大学'];
+    colors = getRandomColors(10);
+    songNames = ['北海道大学','中央大学','東京工業大学','一橋大学','東北学院大学','日本大学','法政大学','東京大学','京都大学','名古屋大学'];
   }
 
   Future<void> _refreshData() {
