@@ -11,8 +11,8 @@ import 'utils.dart';
 import 'widgets.dart';
 
 class NewsTab extends StatefulWidget {
-  static const title = 'News';
-  static const androidIcon = Icon(Icons.library_books);
+  static const title = 'チューターに質問';
+  static const androidIcon = Icon(Icons.question_answer);
   static const iosIcon = Icon(CupertinoIcons.news);
 
   @override
