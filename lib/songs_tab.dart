@@ -10,8 +10,9 @@ import 'song_detail_tab.dart';
 import 'utils.dart';
 import 'widgets.dart';
 
+
 class SongTab extends StatefulWidget {
-  static const title = 'もくもく会';
+  static const title = 'benesseもくもく会';
   static const androidIcon = Icon(Icons.cast_for_education);
   static const iosIcon = Icon(CupertinoIcons.music_note);
 
@@ -41,16 +42,16 @@ class _SongTabState extends State<SongTab> {
   void _setData() {
     colors = getRandomColors(10);
     songNames = [
-      '北海道大学',
-      '中央大学',
-      '東京工業大学',
-      '一橋大学',
-      '東北学院大学',
-      '日本大学',
-      '法政大学',
-      '東京大学',
-      '京都大学',
-      '名古屋大学'
+      '北海道大学 21人　参加中',
+      '中央大学　9人　参加中',
+      '東京工業大学 32人　参加中',
+      '一橋大学 29人　参加中',
+      '東北学院大学 10人　参加中',
+      '日本大学 42人　参加中',
+      '法政大学 11人　参加中',
+      '東京大学 42人　参加中',
+      '京都大学 36人　参加中',
+      '名古屋大学 21人　参加中'
     ];
     Imagesets = [
       Image(image: AssetImage("images/hokkaido.jpg"),),

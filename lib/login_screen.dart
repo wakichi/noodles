@@ -36,7 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   //Do something with the user input.
                 },
                 decoration: InputDecoration(
-                  hintText: 'Enter your email',
+                  hintText: 'Enter your benesseID',
                   contentPadding:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                   border: OutlineInputBorder(
