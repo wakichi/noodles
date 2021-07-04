@@ -48,6 +48,7 @@ class PressableCard extends StatefulWidget {
   final Animation<double> flattenAnimation;
   final Widget? child;
 
+
   @override
   State<StatefulWidget> createState() => _PressableCardState();
 }
@@ -139,7 +140,7 @@ class HeroAnimatingSongCard extends StatelessWidget {
     required this.song,
     required this.color,
     required this.heroAnimation,
-    //required this.univ_image,
+    required this.uniImage,
     this.onPressed,
   });
 
@@ -147,6 +148,7 @@ class HeroAnimatingSongCard extends StatelessWidget {
   final Color color;
   final Animation<double> heroAnimation;
   final VoidCallback? onPressed;
+  final Image uniImage;
 
   double get playButtonSize => 50 + 50 * heroAnimation.value;
 
@@ -191,23 +193,26 @@ class HeroAnimatingSongCard extends StatelessWidget {
                 ),
                 // The play button grows in the hero animation.
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 45) *
-                      (1 - heroAnimation.value),
-                  child: Container(
-                    /*child: Image(
-                      image: AssetImage('images/graph.png'),
-                    ),*/
-                    height: playButtonSize,
-                    width: playButtonSize,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.black12,
-                    ),
-                    alignment: Alignment.center,
-                    child: Icon(Icons.play_arrow,
-                        size: playButtonSize, color: Colors.black38),
-                  ),
+                    padding: const EdgeInsets.only(bottom: 80) * (1 - heroAnimation.value),
+                    child: uniImage,
                 ),
+                //   padding: const EdgeInsets.only(bottom: 45) *
+                //       (1 - heroAnimation.value),
+                //   child: Container(
+                //     /*child: Image(
+                //       image: AssetImage('images/graph.png'),
+                //     ),*/
+                //     height: playButtonSize,
+                //     width: playButtonSize,
+                //     decoration: const BoxDecoration(
+                //       shape: BoxShape.circle,
+                //       color: Colors.black12,
+                //     ),
+                //     alignment: Alignment.center,
+                //     child: Icon(Icons.play_arrow,
+                //         size: playButtonSize, color: Colors.black38),
+                //   ),
+                // ),
               ],
             ),
           ),

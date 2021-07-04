@@ -22,6 +22,7 @@ class SongDetailTab extends StatelessWidget {
   final String song;
   final Color color;
 
+
   Widget _buildBody() {
     return SafeArea(
       bottom: false,
@@ -33,6 +34,7 @@ class SongDetailTab extends StatelessWidget {
           Hero(
             tag: id,
             child: HeroAnimatingSongCard(
+              uniImage: Image(image: AssetImage("images/zoom.png"),),
               song: song,
               color: color,
               heroAnimation: const AlwaysStoppedAnimation(1),
@@ -44,6 +46,7 @@ class SongDetailTab extends StatelessWidget {
             flightShuttleBuilder: (context, animation, flightDirection,
                 fromHeroContext, toHeroContext) {
               return HeroAnimatingSongCard(
+                uniImage: Image(image: AssetImage("images/zoom.png"),),
                 song: song,
                 color: color,
                 heroAnimation: animation,

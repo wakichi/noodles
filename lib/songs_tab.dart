@@ -30,6 +30,7 @@ class _SongTabState extends State<SongTab> {
 
   late List<MaterialColor> colors;
   late List<String> songNames;
+  late List<Image>  Imagesets;
 
   @override
   void initState() {
@@ -50,6 +51,18 @@ class _SongTabState extends State<SongTab> {
       '東京大学',
       '京都大学',
       '名古屋大学'
+    ];
+    Imagesets = [
+      Image(image: AssetImage("images/hokkaido.jpg"),),
+      Image(image: AssetImage("images/chuo.jpg"),),
+      Image(image: AssetImage("images/toukou.jpg"),),
+      Image(image: AssetImage("images/hitotubasi.jpg"),),
+      Image(image: AssetImage("images/touhokugakuin.jpg"),),
+      Image(image: AssetImage("images/nihon.jpg"),),
+      Image(image: AssetImage("images/hosei.jpg"),),
+      Image(image: AssetImage("images/tokyo.jpg"),),
+      Image(image: AssetImage("images/kyoto.jpg"),),
+      Image(image: AssetImage("images/nagoya.jpg"),),
     ];
   }
 
@@ -76,6 +89,7 @@ class _SongTabState extends State<SongTab> {
       child: Hero(
         tag: index,
         child: HeroAnimatingSongCard(
+          uniImage: Imagesets[index],
           song: songNames[index],
           color: color,
           heroAnimation: const AlwaysStoppedAnimation(0),
@@ -132,8 +146,8 @@ class _SongTabState extends State<SongTab> {
                 await _androidRefreshKey.currentState!.show(),
           ),
           IconButton(
-            icon: const Icon(Icons.shuffle),
-            onPressed: _togglePlatform,
+            icon: const Icon(Icons.youtube_searched_for),
+            onPressed: (){},
           ),
         ],
       ),
